@@ -3,9 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form</title>
 </head>
 <body>
-    
+    <header>
+    <h1>Choose your favorite</h1>
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+        <form action="https://formspree.io/xoqkgrvn" method="post">
+            <label>User name:
+                <input type="text" name="user name" placeholder="User name" required>
+            </label>
+            <br>
+            <label>User Email:
+                <input type="text" name="user name" placeholder="User email" required>
+            </label>
+            <br>
+            <label>User phone:
+                <input type="tel" name="user phone" placeholder="User phone" required>
+            </label>
+            <p>Gender</p>
+                <input type="radio" name="gender" value="maie">Man
+                <input type="radio" name="gender" value="femaie">Woman
+                <input type="radio" name="gender" value="other">Other
+            <p>Your favorite:</p> 
+            <select name="places">
+                <option value="lvov">lviv</option>
+                <option value="odessa">Odessa</option>
+                <option value="bukovel">Bukovel</option> 
+                <option value="kiev">Kiev</option>
+                <option value="kamianets podilskyi fortress">Kamianets-podilskyi fortres</option>
+            </select>
+            <p>Your comment</p>
+                <textarea name="text"></textarea> 
+            <p>Action</p>    
+                <button type="submit">Send</button> 
+        </form>
 </body>
 </html>
